@@ -67,6 +67,7 @@ $full_width:100%;
             justify-content: center;
             align-items: center;
         @extend %child_container_size;
+        background-color: $bg_login;
         .logo{
             width: 300px;
             height: 155px;
@@ -79,9 +80,7 @@ $full_width:100%;
             background-position: center;
            
         }
-        form{
-            border: 1px solid red ;
-           
+        form{ 
             height: 50%;
             position: relative;
             margin: 0;

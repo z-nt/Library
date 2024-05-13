@@ -1,7 +1,8 @@
 import React from "react";
 import './out.css';
+import {Outlet,Link} from "react-router-dom";
+ function Loding(){
 
-function Loding(){
     return(
         <>
             <div className="container">
@@ -10,11 +11,13 @@ function Loding(){
                  </div>
                  <div className="login_container">
                      <div className="logo"></div>
-                     <form className="login">
-                        <input  className="  user_input  username"   id="username" placeholder="username..." />
-                        <input  className="  user_input  password"  id="password" placeholder="***********"/>
+                     <form className="login" >
+                        <input  className="  user_input  username"   id="username"  placeholder="username..." />
+                        <input  className="  user_input  password"   id="password"  placeholder="password..."/>
                         <div className="box-buttons">
-                          <input type="submit" className="submit"  id="submit" value={"submit"}/>
+                            
+                          
+                            
                         </div>
                      </form>
                  </div>
