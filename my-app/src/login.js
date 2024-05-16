@@ -1,15 +1,12 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
-
-import Home from "./pages/Home";
-import { Navigate, useNavigate } from "react-router-dom";
+import {Link } from "react-router-dom";
 import './out.css';
 
 
 function Loding(){
-    const handelSubmit = (e)=>{
-        e.preventDefault();
-        Navigate('/contacts');
+  
+    const handelsubmit = () =>{
+       console.log("efeaf");
     }
 
 
@@ -22,15 +19,18 @@ function Loding(){
                  </div>
                  <div className="login_container">
                      <div className="logo"></div>
-                     <form className="login" onSubmit={handelSubmit} >
+                     <form className="login" onSubmit={handelsubmit} >
                         <input  className="  user_input  username"   id="username"  placeholder="username..." />
                         <input  className="  user_input  password"   id="password"  placeholder="password..."/>
                         <div className="box-buttons">
-                             <input  type="submit" className="submit"  id="submit" value={"submit"}/>
+                            <Link to="/pages/book" >
+                                 <input  type="submit" className="submit"  id="submit" value={"submit"}/>
+                            </Link>
                         </div>
                      </form>
                  </div>
             </div>
+              
         </>
     )
 }
